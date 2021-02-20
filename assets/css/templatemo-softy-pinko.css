@@ -582,15 +582,12 @@ header
   .header-area .container {
     padding: 0px;
   }
-  .header-area .logo {
-    margin-top: 27px !important;
-    margin-left: 30px;
-  }
   .header-area .menu-trigger {
     display: block !important;
   }
   .header-area .main-nav {
     overflow: hidden;
+    display: flex;
   }
   .header-area .main-nav .nav {
     float: none;
@@ -643,11 +640,11 @@ welcome
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../images/banner-bg.png);
+  background: url("../images/bg-home.png");
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover; 
   height: 100vh;
+  
 }
 
 .welcome-area .header-text {
