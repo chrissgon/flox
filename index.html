@@ -383,25 +383,21 @@
     <script src="assets/js/custom.js"></script>
 
 
-    <script src="assets/js/instagramFeed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/InstagramFeed/3.0.2/InstagramFeed.min.js"></script>
     <script>
-        (function ($) {
-            $(window).on('load', function () {
-                $.instagramFeed({
-                    'username': 'floxassessoria',
-                    'container': "#insta",
-                    'display_profile': false,
-                    'display_biography': false,
-                    'display_gallery': true,
-                    'display_captions': false,
-                    'callback': null,
-                    'styling': true,
-                    'items': 8,
-                    'items_per_row': 4,
-                    'margin': 0
-                });
-            });
-        })(jQuery);
+        new InstagramFeed({
+            'username': 'floxassessoria',
+            'container': document.getElementById("insta"),
+            'display_profile': false,
+            'display_biography': false,
+            'display_gallery': true,
+            'display_captions': false,
+            'callback': null,
+            'styling': true,
+            'items': 8,
+            'items_per_row': 4,
+            'margin': 1
+        });
     </script>
 </body>
 
